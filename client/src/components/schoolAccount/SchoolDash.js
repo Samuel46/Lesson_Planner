@@ -32,10 +32,10 @@ import { getTeachers } from "../../actions/auth/authTeacherSchool";
 import TeacherTable from "./TeacherTable";
 
 import Alert  from '../layouts/Alert'
-import Avatar from "../../@core/components/avatar";
+
 
 function SchoolDash({ logoutSchool , getTeachers, teachers, authSchool:{school}}) {
-  const [img, setImg] = useState(null)
+  
   
   // fetch all the register teachers
   useEffect(() => {
@@ -52,44 +52,7 @@ function SchoolDash({ logoutSchool , getTeachers, teachers, authSchool:{school}}
     setEditTeacherModal(!editTeacherModal)
   };
 
-  const renderUserAvatar = () => {
-    if (img === null) {
-      const stateNum = Math.floor(Math.random() * 6),
-        states = ['light-success', 'light-danger', 'light-warning', 'light-info', 'light-primary', 'light-secondary'],
-        color = states[stateNum]
-      return (
-        <Avatar
-          initials
-          color={color}
-          className='rounded mr-1'
-        //   content={.fullName}
-          content={school.name}
-          contentStyles={{
-            borderRadius: 0,
-            fontSize: 'calc(36px)',
-            width: '100%',
-            height: '100%'
-          }}
-          style={{
-            height: '55px',
-            width: '60px'
-          }}
-        />
-      )
-    } else {
-      return (
-        <img
-          className='user-avatar rounded mr-2 my-25 cursor-pointer'
-          src="https://i.pinimg.com/originals/51/f6/fb/51f6fb256629fc755b8870c801092942.png"
-          // scr={img}
-          alt='user profile avatar'
-          height='90'
-          width='90'
-        />
-      )
-    }
-  }
-
+  
   return (
     <Fragment>
       {/*  add teacher model */}
@@ -159,11 +122,11 @@ function SchoolDash({ logoutSchool , getTeachers, teachers, authSchool:{school}}
                 aria-expanded="false"
               >
                 <div className="user-nav d-sm-flex d-none">
-                  <span className="user-name font-weight-bolder">{school.name}</span>
+                  <span className="user-name font-weight-bolder">{school && school.name}</span>
                   <span className="user-status">Admin</span>
                 </div>
                 <span >
-                 {renderUserAvatar()}
+                 
                   <span className="avatar-status-online" />
                 </span>
               </a>
