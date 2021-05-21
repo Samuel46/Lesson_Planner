@@ -57,7 +57,7 @@ function LessonPlanner({
 
   useEffect(() => {
     fetchLessons(selctedLesson);
-  }, [ fetchLessons, selctedLesson, createLesson]);
+  }, [  selctedLesson]);
 
   // ** UseEffect checks for CalendarAPI Update
   useEffect(() => {
