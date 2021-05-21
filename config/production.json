@@ -1,0 +1,5 @@
+{
+    "mongoURL": "mongodb+srv://samuel__46:MNM8pJuUrio6t0oZ@teacher-plannerapp.shqql.mongodb.net/Teacher-PlannerApp?retryWrites=true&w=majority",
+    "jwtSecret": "myscrettoken",
+    "jwtTeacherSecret": "teacherscrettoken"
+}

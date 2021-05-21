@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+   
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    
+   
+    <!-- BEGIN: Vendor CSS-->
+    <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/app-assets/vendors/css/vendors.min.css">
+    <!-- END: Vendor CSS-->
+
+    <!-- TODO change jquery to react.js -->
+
+    <!-- BEGIN: Theme CSS-->
+    <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/app-assets/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/app-assets/css/bootstrap-extended.css">
+    <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/app-assets/css/colors.css">
+    <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/app-assets/css/components.css">
+    <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/app-assets/css/themes/dark-layout.css">
+    <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/app-assets/css/themes/bordered-layout.css">
+    <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/app-assets/css/themes/semi-dark-layout.css">
+
+    <!-- BEGIN: Page CSS-->
+    <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/app-assets/css/core/menu/menu-types/vertical-menu.css">
+    <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/app-assets/css/plugins/forms/form-validation.css">
+    <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/app-assets/css/pages/page-auth.css">
+
+     <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/app-assets/css/pages/dashboard-ecommerce.css">
+     <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/app-assets/css/plugins/charts/chart-apex.css">
+     <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/app-assets/css/plugins/extensions/ext-component-toastr.css">
+     <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/app-assets/vendors/css/calendars/fullcalendar.min.css">
+     <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/app-assets/vendors/css/forms/select/select2.min.css">
+     <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/app-assets/vendors/css/pickers/flatpickr/flatpickr.min.css">
+
+
+     <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/app-assets/css/core/menu/menu-types/vertical-menu.css">
+    <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/app-assets/css/plugins/forms/pickers/form-flat-pickr.css">
+    <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/app-assets/css/pages/app-calendar.css">
+    <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/app-assets/css/plugins/forms/form-validation.css">
+
+    <!-- BEGIN: Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/assets/css/style.css">
+    <!-- END: Custom CSS-->
+   
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+   
+    <title>Lesson Planner</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    
+  </body>
+  <!-- BEGIN: Vendor JS-->
+  <script src="%PUBLIC_URL%/app-assets/vendors/js/vendors.min.js"></script>
+  <!-- BEGIN Vendor JS-->
+
+  <!-- BEGIN: Page Vendor JS-->
+  <script src="%PUBLIC_URL%/app-assets/vendors/js/forms/validation/jquery.validate.min.js"></script>
+  <!-- END: Page Vendor JS-->
+
+  <!-- BEGIN: Theme JS-->
+  <script src="%PUBLIC_URL%/app-assets/js/core/app-menu.js"></script>
+  <script src="%PUBLIC_URL%/app-assets/js/core/app.js"></script>
+  <!-- END: Theme JS-->
+
+  <!-- BEGIN: Page JS-->
+  <script src="%PUBLIC_URL%/app-assets/js/scripts/pages/page-auth-login.js"></script>
+   <script src="%PUBLIC_URL%/app-assets/js/scripts/pages/dashboard-ecommerce.js"></script>
+ 
+  
+  <!-- END: Page JS-->
+
+  <script>
+      $(window).on('load', function() {
+          if (feather) {
+              feather.replace({
+                  width: 14,
+                  height: 14
+              });
+          }
+      })
+  </script>
+</html>
